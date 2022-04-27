@@ -66,7 +66,15 @@
 
 
  </string>
+    <string name="players">Each team has 7 players on court who all have different positions. Each player has a designated area on the court where they are allowed to move:
+\nGoal Shooter (GS - 1 &amp; 2)
+\nGoal Attack (GA - 1, 2 &amp; 3)
+\nWing Attack (WA - 2 &amp; 3)
+\nCentre (C - 2, 3 &amp; 4)
+\nWing Defense (WD - 3 &amp; 4)
+\nGoal Defense (GD - 3, 4 &amp; 5)
+\nGoal Keeper (GK - 4 &amp; 5)</string>
     <string name="app_name">
-
+Netball
     </string>
 </resources>

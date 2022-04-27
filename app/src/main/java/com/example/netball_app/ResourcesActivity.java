@@ -58,7 +58,7 @@ public class ResourcesActivity extends AppCompatActivity {
         ibPositions.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ResourcesActivity.this, PositionsActivity.class);
+                Intent intent = new Intent(ResourcesActivity.this,PostionActivity.class);
                 startActivity(intent);
             }
         });
