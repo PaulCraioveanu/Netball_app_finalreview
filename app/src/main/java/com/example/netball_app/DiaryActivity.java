@@ -44,10 +44,10 @@ public class DiaryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diary);
 
-        newButton=(Button)findViewById(R.id.newButton);
-        saveButton=(Button)findViewById(R.id.saveButton);
-        openButton=(Button)findViewById(R.id.openButton);
-        text=(EditText)findViewById(R.id.text);
+        newButton= findViewById(R.id.newButton);
+        saveButton= findViewById(R.id.saveButton);
+        openButton= findViewById(R.id.openButton);
+        text= findViewById(R.id.text);
         //Register AlarmManager Broadcast receive.
         RegisterAlarmBroadcast();
     }
@@ -162,7 +162,7 @@ public class DiaryActivity extends AppCompatActivity {
 
                         while ((c = fin.read()) != -1)
                         {
-                            text.setText((text.getText().toString() + Character.toString((char) c)));
+                            text.setText((text.getText().toString() + (char) c));
                         }
                     }catch (Exception e) {
                         Toast.makeText(getApplicationContext(), "Error Occured: "+e,Toast.LENGTH_LONG).show();

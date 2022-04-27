@@ -18,7 +18,7 @@ public class ResourcesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resources);
 
-        ibGuide = (ImageButton) findViewById(R.id.ibGuide);
+        ibGuide = findViewById(R.id.ibGuide);
         ibGuide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -27,7 +27,7 @@ public class ResourcesActivity extends AppCompatActivity {
             }
         });
 
-        ibExercises = (ImageButton) findViewById(R.id.ibExercises);
+        ibExercises = findViewById(R.id.ibExercises);
         ibExercises.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,7 +36,7 @@ public class ResourcesActivity extends AppCompatActivity {
             }
         });
 
-        ibDrilllibrary = (ImageButton) findViewById(R.id.ibDrilllibrary);
+        ibDrilllibrary = findViewById(R.id.ibDrilllibrary);
         ibDrilllibrary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,7 +45,7 @@ public class ResourcesActivity extends AppCompatActivity {
             }
         });
 
-        ibSkills = (ImageButton) findViewById(R.id.ibSkills);
+        ibSkills = findViewById(R.id.ibSkills);
         ibSkills.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +54,7 @@ public class ResourcesActivity extends AppCompatActivity {
             }
         });
 
-        ibPositions = (ImageButton) findViewById(R.id.ibPositions);
+        ibPositions = findViewById(R.id.ibPositions);
         ibPositions.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

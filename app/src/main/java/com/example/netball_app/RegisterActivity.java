@@ -43,7 +43,7 @@ public class RegisterActivity extends AppCompatActivity{
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPassword);
         etAge = findViewById(R.id.etAge);
-        bRegister = (ImageButton) findViewById(R.id.Registerbutton);
+        bRegister = findViewById(R.id.Registerbutton);
 
         bRegister.setOnClickListener(new View.OnClickListener() {
             @Override

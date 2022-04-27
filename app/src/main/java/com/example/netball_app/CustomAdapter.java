@@ -72,7 +72,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         TextView title;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            title=(TextView) itemView.findViewById(R.id.textContent);
+            title= itemView.findViewById(R.id.textContent);
         }
     }
 }

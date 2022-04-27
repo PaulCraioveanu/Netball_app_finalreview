@@ -11,7 +11,7 @@ import java.util.Map;
 public class RegisterRequest extends StringRequest {
 
     private static final String REGISTER_REQUEST_URL = "https://netball-app.000webhostapp.com/Register.php";
-    private Map<String, String> params;
+    private final Map<String, String> params;
 
     public RegisterRequest(String username, String name, String email, String password, int age, Response.Listener<String> listener) {
         super(Method.POST, REGISTER_REQUEST_URL, listener, null);

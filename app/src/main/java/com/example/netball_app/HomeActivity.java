@@ -24,11 +24,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        etName = (TextView) findViewById(R.id.etName);
-        etUsername = (TextView) findViewById(R.id.etUsername);
-        etEmail = (TextView) findViewById(R.id.etEmail);
+        etName = findViewById(R.id.etName);
+        etUsername = findViewById(R.id.etUsername);
+        etEmail = findViewById(R.id.etEmail);
 
-        ibResources = (ImageButton) findViewById(R.id.ibResources);
+        ibResources = findViewById(R.id.ibResources);
         ibResources.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,7 +37,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-        ibQuicktraining = (ImageButton) findViewById(R.id.ibQuicktraining);
+        ibQuicktraining = findViewById(R.id.ibQuicktraining);
         ibQuicktraining.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,7 +46,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-        ibDiary = (ImageButton) findViewById(R.id.ibDiary);
+        ibDiary = findViewById(R.id.ibDiary);
         ibDiary.setOnClickListener(new View.OnClickListener() {
 
 
@@ -58,7 +58,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-        ibSchedule = (ImageButton) findViewById(R.id.ibSchedule);
+        ibSchedule = findViewById(R.id.ibSchedule);
         ibSchedule.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,7 +67,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-        idBtnLogout = (ImageButton) findViewById(R.id.idBtnLogout);
+        idBtnLogout = findViewById(R.id.idBtnLogout);
         idBtnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

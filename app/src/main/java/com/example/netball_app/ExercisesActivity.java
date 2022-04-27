@@ -13,7 +13,7 @@ public class ExercisesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercises);
-        tvJogging = (TextView) findViewById(R.id.tvJogging);
+        tvJogging = findViewById(R.id.tvJogging);
 
     }
 
