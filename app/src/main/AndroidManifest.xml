@@ -12,58 +12,85 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Netball_app">
         <activity
+            android:name=".AdvancedDrillActivity"
+            android:theme="@style/Theme.Netball"
+            android:exported="false" />
+        <activity
+            android:name=".IntermediateDrillActivity"
+            android:theme="@style/Theme.Netball"
+            android:exported="false" />
+        <activity
+            android:name=".BeginnerDrillActivity"
+            android:theme="@style/Theme.Netball"
+            android:exported="false" />
+        <activity
             android:name=".ScheduleActivity"
+            android:theme="@style/Theme.Netball"
             android:exported="false" />
         <activity
             android:name=".DiaryActivity"
-            android:exported="false" />
-        <activity android:name=".NotificationView"
+            android:exported="false"
+            android:theme="@style/Theme.Netball" />
+        <activity
+            android:name=".NotificationView"
             android:label="Details of notification"
             android:parentActivityName=".DiaryActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".DiaryActivity"/>
+                android:value=".DiaryActivity" />
         </activity>
         <activity
             android:name=".TrainingActivity"
-            android:exported="false" />
-        <activity android:name=".PostionActivity"
             android:theme="@style/Theme.Netball"
-            android:exported="false"/>
+            android:exported="false" />
+        <activity
+            android:name=".PostionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Netball" />
         <activity
             android:name=".SkillsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Netball" />
         <activity
             android:name=".DrillActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Netball" />
         <activity
             android:name=".ExercisesActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Netball" />
         <activity
             android:name=".GuideActivity"
-            android:theme="@style/Theme.Netball"
-            android:exported="false" />
-        <activity android:name=".DetailActivity"
-            android:theme="@style/Theme.Netball"
-            android:exported="false"/>
+            android:exported="false"
+            android:theme="@style/Theme.Netball" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Netball" />
         <activity
             android:name=".ResourcesActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Netball" />
         <activity
             android:name=".RegisterActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Netball" />
         <activity
             android:name=".FirstActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Netball" />
         <activity
             android:name=".ProfileActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Netball" />
         <activity
             android:name=".HomeActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Netball" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Netball">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

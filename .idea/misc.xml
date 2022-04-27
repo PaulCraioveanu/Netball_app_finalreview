@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/Netball_app_finalreview/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.5285" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/Netball_app_finalreview/app/src/main/res/layout/activity_advanced_drill.xml" value="0.534375" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/Netball_app_finalreview/app/src/main/res/layout/activity_beginner_drill.xml" value="0.534375" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/Netball_app_finalreview/app/src/main/res/layout/activity_diary.xml" value="0.55" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/Netball_app_finalreview/app/src/main/res/layout/activity_home.xml" value="0.5" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/Netball_app_finalreview/app/src/main/res/layout/activity_intermediate_drill.xml" value="0.534375" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/Netball_app_finalreview/app/src/main/res/layout/activity_resources.xml" value="0.534375" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/Netball_app_finalreview/app/src/main/res/layout/activity_schedule.xml" value="0.534375" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/Netball_app_finalreview/app/src/main/res/layout/activity_training.xml" value="0.534375" />
         <entry key="..\:/Users/paulb/AndroidStudioProjects/Netball_application-master/app/src/main/res/layout/activity_diary.xml" value="0.2015625" />
         <entry key="..\:/Users/paulb/AndroidStudioProjects/Netball_application-master/app/src/main/res/layout/activity_exercises.xml" value="0.22" />
         <entry key="..\:/Users/paulb/AndroidStudioProjects/Netball_application-master/app/src/main/res/layout/activity_guide.xml" value="0.25" />
