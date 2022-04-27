@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/paulb/AndroidStudioProjects/Netball_application-master/app/src/main/res/layout/activity_diary.xml" value="0.2015625" />
         <entry key="..\:/Users/paulb/AndroidStudioProjects/Netball_application-master/app/src/main/res/layout/activity_exercises.xml" value="0.22" />
         <entry key="..\:/Users/paulb/AndroidStudioProjects/Netball_application-master/app/src/main/res/layout/activity_guide.xml" value="0.25" />
+        <entry key="..\:/Users/paulb/AndroidStudioProjects/Netball_application-master/app/src/main/res/layout/activity_positions.xml" value="0.2015625" />
+        <entry key="..\:/Users/paulb/AndroidStudioProjects/Netball_application-master/app/src/main/res/layout/activity_postion.xml" value="0.2015625" />
       </map>
     </option>
   </component>
