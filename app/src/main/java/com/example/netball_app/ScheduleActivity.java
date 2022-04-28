@@ -20,13 +20,14 @@ public class ScheduleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule);
 
-
+        //assign variables
         schedule = (CalendarView)
                 findViewById(R.id.schedule);
         calendarr = (TextView)
                 findViewById(R.id.calendarr);
 
         schedule
+                //setting textview to change if pressed
                 .setOnDateChangeListener(
                         new CalendarView
                                 .OnDateChangeListener() {

@@ -14,7 +14,7 @@ public class TrainingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_training);
-
+        //assigned button and click listener - new activity
         tvbeginnerdrill = findViewById(R.id.tvbeginnerdrill);
         tvbeginnerdrill.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -23,6 +23,7 @@ public class TrainingActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //assigned button and click listener - new activity
         tvintermediatedrill = findViewById(R.id.tvintermediatedrill);
         tvintermediatedrill.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +32,7 @@ public class TrainingActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //assigned button and click listener - new activity
         tvadvanceddrill = findViewById(R.id.tvadvanceddrill);
         tvadvanceddrill.setOnClickListener(new View.OnClickListener() {
             @Override

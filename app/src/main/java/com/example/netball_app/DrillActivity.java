@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+///////////////////////////////// ACTIVITY NOT USED ANYMORE ///////////////////////////////////////
+
 public class DrillActivity extends AppCompatActivity {
 
     @Override

@@ -17,6 +17,7 @@ public class AdvancedDrillActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_advanced_drill);
 
+        // links to first video on the Advanced Drill
         videoID = "Sc_uw-RWS_Q";
         webView = findViewById(R.id.webView);
         webView.getSettings().setJavaScriptEnabled(true);
@@ -24,6 +25,7 @@ public class AdvancedDrillActivity extends AppCompatActivity {
         webView.loadUrl("https://www.youtube.com/embed/" + videoID + "?autoplay=1&vq=small");
         webView.setWebChromeClient(new WebChromeClient());
 
+        // links to second video on the Advanced Drill
         videoID2 = "P9qu84KmWv4";
         webView2 = findViewById(R.id.webView2);
         webView2.getSettings().setJavaScriptEnabled(true);

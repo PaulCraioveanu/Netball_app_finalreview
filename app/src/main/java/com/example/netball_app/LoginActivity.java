@@ -21,6 +21,7 @@ import org.json.JSONObject;
 import org.w3c.dom.Text;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+    // declared buttons and other containers
     EditText Name;
     EditText Password;
     ImageButton Info;
@@ -31,12 +32,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        //assigning variables
         Name = findViewById(R.id.etUsername);
         Password = findViewById(R.id.etPassword);
         Info = findViewById(R.id.btnregister);
         Login = findViewById(R.id.btnLogin);
 
-
+        //set what the Login button does
         Login.setOnClickListener(this);
         userLocalStore = new UserLocalStore(this);
 
@@ -57,14 +59,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 final String username = Name.getText().toString();
                 final String password = Password.getText().toString();
 
+                //listener that checks on the information received from user input
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
 
                         try {
+                            //info converted into jsonobject to work with
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
 
+                            // if information matches - user is sent to Home Activity. Info also sent to show as Profile in Home Activity
                             if (success){
 
                                 String name = jsonResponse.getString("name");
@@ -78,7 +83,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
                                 LoginActivity.this.startActivity(intent);
 
-
+                            // if information does not match or is missing - alert user of wrong info
                             }else{
                                 AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
                                 builder.setMessage("Login Failed")
@@ -86,13 +91,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                         .create()
                                         .show();
                             }
+                            //if any error occurs
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
 
                     }
                 };
-
+                //information for Request Queue
                 LoginRequest loginRequest = new LoginRequest(username, password, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
                 queue.add(loginRequest);

@@ -33,9 +33,9 @@ public class RegisterActivity extends AppCompatActivity{
         viewInitializations();
     }
 
-    boolean isEmailValid(String email) {
-        return Patterns.EMAIL_ADDRESS.matcher(email).matches();
-    }
+    // boolean isEmailValid(String email) {
+        //return Patterns.EMAIL_ADDRESS.matcher(email).matches();
+    //}
 
     void viewInitializations() {
         etUsername = findViewById(R.id.etUsername);
@@ -45,8 +45,10 @@ public class RegisterActivity extends AppCompatActivity{
         etAge = findViewById(R.id.etAge);
         bRegister = findViewById(R.id.Registerbutton);
 
+        //set what button does
         bRegister.setOnClickListener(new View.OnClickListener() {
             @Override
+            //variable only assigned to this
             public void onClick(View view) {
                 final String username = etUsername.getText().toString();
                 final String name = etName.getText().toString();
@@ -56,14 +58,18 @@ public class RegisterActivity extends AppCompatActivity{
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
+                    //converting to jsonobject to be able to work with it
                     public void onResponse(String response) {
                         try {
                             JSONObject jsonResponse = new JSONObject(response);
+                            //check if response is successful
                             boolean success = jsonResponse.getBoolean("success");
 
+                            //if register successful - push user to login
                             if (success){
                                 Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                                 RegisterActivity.this.startActivity(intent);
+                                //if register not successful - alert user of failed rergistration
                             }else{
                                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                                 builder.setMessage("Register Failed")
@@ -77,7 +83,8 @@ public class RegisterActivity extends AppCompatActivity{
                         }
                     }
                 };
-
+                //request has to be added to request queue
+                //get queue from volley
                 RegisterRequest registerReguest = new RegisterRequest(username, name, email, password, age, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
                 queue.add(registerReguest);

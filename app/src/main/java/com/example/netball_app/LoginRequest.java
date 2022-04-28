@@ -9,13 +9,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LoginRequest extends StringRequest {
+    //url where file is stored
     private static final String LOGIN_REQUEST_URL = "https://netball-app.000webhostapp.com/Login.php";
     private Map<String, String> params;
 
+    //make request to Login.php file on server and get response
     public LoginRequest(String username, String password, Response.Listener<String> listener){
         super(Request.Method.POST, LOGIN_REQUEST_URL, listener, null);
         params = new HashMap<>();
         params = new HashMap<>();
+        //only requires username and password as user is logging in
         params.put("username", username);
         params.put("password", password);
     }
